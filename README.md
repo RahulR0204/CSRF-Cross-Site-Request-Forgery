@@ -32,6 +32,15 @@ A cookie attribute that restricts how cookies are sent with cross-site requests.
 - **SameSite=Lax**: The cookie is sent with top-level navigations but not with third-party contexts (e.g., embedded iframes).
 - **SameSite=None**: The cookie is sent with cross-site requests, but only if Secure is also set.
 
+### 3. Origin and Referrer Headers:
+
+ Validate the Origin and Referer headers on incoming requests. Ensure that requests originate from trusted domains and reject requests with unexpected origins or missing/invalid referrers.
+
+### 4. Session Management: 
+
+Implement secure session management practices, such as expiring sessions after a period of inactivity, using secure cookies, and ensuring sessions are invalidated properly after logout.
+
+
 ## Usage 
 Clone the repository:
 ```bash
